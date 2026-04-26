@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-04-21 15:53:34.639188",
+ "date_changed": "event_date",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Registration",
+ "enabled": 0,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hello,\r\n\r\nHere is your Weekly Event Summary:\r\n\r\nEvent: {{ doc.event }}\r\n\r\nParticipant: {{ frappe.get_doc(\"Participant\", doc.participant).full_name }}\r\n\r\nEvent Date: {{ frappe.utils.formatdate(doc.event_date) }}\r\n\r\nStatus: {{ doc.status }}\r\n\r\nThank you.",
+ "message_type": "Markdown",
+ "modified": "2026-04-26 19:52:44.995962",
+ "modified_by": "Administrator",
+ "module": "ems",
+ "name": "Weekly Event Summary",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Weekly Event Summary"
+}

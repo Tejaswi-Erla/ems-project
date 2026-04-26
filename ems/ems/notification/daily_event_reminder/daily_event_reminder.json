@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-04-22 23:37:56.672660",
+ "date_changed": "creation",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Registration",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hello,\r\n\r\nThis is a reminder that your registered event \"{{ doc.event }}\" is scheduled soon.\r\n\r\nEvent Date: {{ doc.event_date }}\r\n\r\nThank you.",
+ "message_type": "Markdown",
+ "modified": "2026-04-26 19:52:13.066242",
+ "modified_by": "Administrator",
+ "module": "ems",
+ "name": "Daily Event Reminder",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Event Reminder"
+}
